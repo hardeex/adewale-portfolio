@@ -677,6 +677,43 @@ section {
   right: 15px;
 }
 
+section#meeting {
+  background-color: #fff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#meeting h4{
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+a.book-session {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a.book-session:hover {
+  background-color: #2980b9;
+}
+.rel-course{
+  color: #3498db;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
