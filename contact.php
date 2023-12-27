@@ -14,6 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail_message .= "Subject: $subject\n\n";
     $mail_message .= "Message:\n$message";
 
+    // Set up headers
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
     // Send email
     $mail_sent = mail($to, $mail_subject, $mail_message, $headers);
 
